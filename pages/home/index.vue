@@ -35,7 +35,7 @@ import TabPanels from 'primevue/tabpanels';
 import TabPanel from 'primevue/tabpanel';
 
 definePageMeta({
-  middleware: ['auth'],
+  middleware: ['is-authenticated'],
 });
 
 const { logout } = useDirectusAuth();

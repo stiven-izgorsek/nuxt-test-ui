@@ -21,7 +21,7 @@ import { useAppStore } from '~/stores/app.store';
 import { useToast } from 'primevue/usetoast';
 
 definePageMeta({
-  middleware: ['guest'],
+  middleware: ['is-guest'],
 });
 
 const { login } = useDirectusAuth();
